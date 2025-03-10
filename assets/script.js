@@ -1,4 +1,4 @@
-// Smooth Scrolling Effect for Internal Links
+// Smooth Scrolling for Internal Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (event) {
         event.preventDefault();
@@ -11,22 +11,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Navbar Background Change on Scroll
 window.addEventListener("scroll", function () {
-    const navbar = document.querySelector("nav");
+    const header = document.querySelector("header");
     if (window.scrollY > 50) {
-        navbar.style.backgroundColor = "#1E293B"; // Dark Navy
+        header.style.backgroundColor = "#1E293B"; // Dark Navy
     } else {
-        navbar.style.backgroundColor = "transparent";
+        header.style.backgroundColor = "transparent";
     }
 });
 
 // Fade-in Animation on Scroll
-const fadeInElements = document.querySelectorAll(".fade-in");
+const fadeInElements = document.querySelectorAll("section");
 const fadeInObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add("visible");
         }
     });
-}, { threshold: 0.5 });
+}, { threshold: 0.3 });
 
 fadeInElements.forEach(el => fadeInObserver.observe(el));
+

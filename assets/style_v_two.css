@@ -16,25 +16,42 @@ body {
     color: var(--text-color);
 }
 
-/* Hero Section */
-.hero {
-    background: var(--primary-color);
+/* Header */
+header {
     text-align: center;
-    padding: 80px 20px;
+    padding: 40px 20px;
+    background: var(--primary-color);
 }
 
-.hero h1 {
+header h1 {
     font-size: 2rem;
     font-weight: bold;
 }
 
-.hero p {
+.tagline {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
-.hero .cta-button {
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+/* Call-to-Action (CTA) Buttons */
+.cta {
     display: inline-block;
+    margin: 10px;
     padding: 12px 24px;
     background: var(--secondary-color);
     color: white;
@@ -44,81 +61,76 @@ body {
     transition: 0.3s;
 }
 
-.hero .cta-button:hover {
+.cta:hover {
     background: #9B1313;
 }
 
-/* Services Section */
-.services {
-    background: var(--accent-color);
-    color: var(--primary-color);
-    padding: 60px 20px;
-    text-align: center;
+/* About Us Section */
+#about {
+    background: #1A1A1A;
+    border-radius: 8px;
 }
 
-.services h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.services ul {
-    list-style: none;
+#about ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.services li {
+#about li {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
-/* Membership Section */
-.memberships {
-    background: #1A1A1A;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.memberships h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.membership-tiers {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.membership-tier {
+/* Services Section */
+#services {
     background: var(--accent-color);
     color: var(--primary-color);
-    padding: 20px;
     border-radius: 8px;
-    width: 200px;
-    text-align: center;
-    transition: transform 0.3s;
 }
 
-.membership-tier:hover {
-    transform: translateY(-5px);
+#services ul {
+    padding: 0;
 }
 
-.membership-tier h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.membership-tier p {
+#services p {
     font-size: 1.2rem;
 }
 
+/* Membership Section */
+#membership {
+    background: #1A1A1A;
+    border-radius: 8px;
+}
+
+#membership p {
+    font-size: 1.2rem;
+}
+
+/* FAQ Section */
+#faq {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    border-radius: 8px;
+}
+
+/* Legal Section */
+#legal {
+    background: #1A1A1A;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+#contact {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    border-radius: 8px;
+}
+
 /* Footer */
-.footer {
+footer {
     background: var(--background-color);
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
 }
+

@@ -1,0 +1,124 @@
+/* Global Styles */
+:root {
+    --primary-color: #1E293B; /* Dark Navy */
+    --secondary-color: #B91C1C; /* Deep Red */
+    --accent-color: #E2E8F0; /* Light Gray */
+    --background-color: #121212; /* Off-Black */
+    --text-color: #ffffff; /* White */
+    --font-main: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Hero Section */
+.hero {
+    background: var(--primary-color);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.hero .cta-button:hover {
+    background: #9B1313;
+}
+
+/* Services Section */
+.services {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Membership Section */
+.memberships {
+    background: #1A1A1A;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.memberships h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.membership-tiers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.membership-tier {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.membership-tier:hover {
+    transform: translateY(-5px);
+}
+
+.membership-tier h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.membership-tier p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    background: var(--background-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}

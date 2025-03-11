@@ -88,6 +88,10 @@ section h2 {
     border-radius: 8px;
 }
 
+#services h2 {
+    color: var(--primary-color); /* Dark Navy for contrast */
+}
+
 #services ul {
     padding: 0;
 }

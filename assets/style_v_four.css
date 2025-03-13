@@ -20,7 +20,7 @@ body {
 header {
     text-align: center;
     padding: 40px 20px;
-    background: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 header h1 {

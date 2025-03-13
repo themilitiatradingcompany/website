@@ -1,0 +1,241 @@
+/* Global Styles */
+:root {
+    --background-color: #1E1E1E; /* Dark Charcoal */
+    --primary-color: #595959; /* Muted Gray */
+    --secondary-color: #A6A6A6; /* Mid Gray */
+    --accent-color: #D0D0D0; /* Soft Gray */
+    --text-color: #F1EFEF; /* Near White */
+    --font-main: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--primary-color);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+/* Call-to-Action (CTA) Buttons */
+.cta {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background: var(--secondary-color);
+    color: var(--background-color);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #8C8C8C; /* Slightly darker gray */
+}
+
+/* About Us Section */
+#about {
+    background: var(--primary-color);
+    border-radius: 8px;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Services Section */
+#services {
+    background: var(--accent-color);
+    color: var(--background-color);
+    border-radius: 8px;
+}
+
+/* Ensure Heading Stands Out */
+#services h2 {
+    color: var(--primary-color);
+}
+
+#services ul {
+    padding: 0;
+}
+
+#services p {
+    font-size: 1.2rem;
+}
+
+/* Membership Section */
+#membership {
+    background: var(--primary-color);
+    border-radius: 8px;
+}
+
+#membership p {
+    font-size: 1.2rem;
+}
+
+/* FAQ Section */
+#faq {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    border-radius: 8px;
+}
+
+/* Legal Section */
+#legal {
+    background: var(--primary-color);
+    border-radius: 8px;
+}
+
+/* Contact Section */
+#contact {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: var(--background-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* ======================= */
+/* RESPONSIVE DESIGN */
+/* ======================= */
+
+/* Mobile Phones (Max Width: 600px) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    #services p, #membership p, #faq p {
+        font-size: 1rem;
+    }
+}
+
+/* Tablets (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta {
+        padding: 12px 24px;
+        font-size: 1.1rem;
+    }
+
+    #services p, #membership p, #faq p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Laptops & Small Desktops (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    section {
+        padding: 60px 30px;
+        max-width: 900px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta {
+        padding: 14px 26px;
+        font-size: 1.2rem;
+    }
+
+    #services p, #membership p, #faq p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Large Screens (1441px and above) */
+@media (min-width: 1441px) {
+    section {
+        max-width: 1000px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .cta {
+        padding: 16px 28px;
+        font-size: 1.3rem;
+    }
+
+    #services p, #membership p, #faq p {
+        font-size: 1.3rem;
+    }
+}

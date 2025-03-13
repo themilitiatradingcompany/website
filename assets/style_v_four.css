@@ -118,6 +118,11 @@ section h2 {
     border-radius: 8px;
 }
 
+/* Ensure Heading Stands Out */
+#faq h2 {
+    color: var(--primary-color);
+}
+
 /* Legal Section */
 #legal {
     background: var(--primary-color);
@@ -130,6 +135,12 @@ section h2 {
     color: var(--background-color);
     border-radius: 8px;
 }
+
+/* Ensure Heading Stands Out */
+#contact h2 {
+    color: var(--primary-color);
+}
+
 
 /* Footer */
 footer {

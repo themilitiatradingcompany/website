@@ -113,8 +113,8 @@ section h2 {
 
 /* FAQ Section */
 #faq {
-    background: var(--primary-color);
-    color: var(--accent-color);
+    background: var(--accent-color);
+    color: var(--background-color);
     border-radius: 8px;
 }
 
@@ -126,8 +126,8 @@ section h2 {
 
 /* Contact Section */
 #contact {
-    background: var(--primary-color);
-    color: var(--accent-color);
+    background: var(--accent-color);
+    color: var(--background-color);
     border-radius: 8px;
 }
 

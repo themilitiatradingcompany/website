@@ -36,3 +36,29 @@ const fadeInObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 
 fadeInElements.forEach(el => fadeInObserver.observe(el));
+
+// detect the deep link and scroll to the right section automatically
+document.addEventListener("DOMContentLoaded", function () {
+    let path = window.location.pathname.split("/").pop(); // Get the last part of the URL (e.g., "legal")
+
+    const sectionMap = {
+        "legal": "legal",
+        "faq": "faq",
+        "membership": "membership",
+        "services": "services",
+        "contact": "contact"
+    };
+
+    if (path in sectionMap) {
+        // Change URL to the correct hash
+        window.history.replaceState(null, "", `/#${sectionMap[path]}`);
+
+        // Wait for the page to load, then scroll smoothly to the section
+        setTimeout(() => {
+            const target = document.getElementById(sectionMap[path]);
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+            }
+        }, 500);
+    }
+});
